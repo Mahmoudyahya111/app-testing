@@ -1,0 +1,522 @@
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}
+
+.telegant-navbar {
+    width: 100vw;
+    background-color: #0d0d0d; /* Dark background from palette #0D0D0D */
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif; /* Approximate Serif Font */
+    padding: 15px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    position: relative;
+}
+
+.navbar-container {
+    max-width: 100%; /* Or preferred max width */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+        gap: 100px;
+
+}
+
+/* Logo Section */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-icon {
+    height: 30px; /* Adjust height as needed */
+    margin-right: 10px;
+    border-right: #ffffff 1px solid;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+}
+.logo-text > P {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+     margin: 0;
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px; /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #c8a86a; /* Gold color from palette #C8A86A on hover */
+}
+
+/* Icons Section */
+.navbar-icons {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.icon-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #c8a86a; /* Gold color on hover */
+}
+
+/* Cart Notification Bubble */
+.cart-icon {
+    position: relative;
+}
+
+/* .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #7a1e1e; 
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+html{
+    background-image:  url(NEBG.png);
+    background-size: 100% 100%;           
+     background-repeat: no-repeat;  
+     background-attachment: fixed; 
+     min-height: 100%; 
+     margin: 0;
+     padding: 0;         
+      font-family: 'Times New Roman', Times, serif;
+     color: #bdd4e7;
+     width: 100%;
+     height: 100%;
+     
+
+
+}
+
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+   
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+ #clothing-form{
+        font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #0d0d0d9a;
+    color: #ffffff;
+    height: 500px;
+    width: 400px;
+    padding: 0 5px;
+    border-radius: 90px;
+    margin: 0 20px;
+    border: 2px solid #c8a86a;
+}
+
+#clothing-form h2{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+}
+#clothing-form p{
+    font-size: 0.9rem;
+    color: #ffffff83;
+    font-weight: 300;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    height: 20px;
+    padding-bottom: 10px;
+}
+section{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#clothing-form label{
+    font-size: 1rem;
+    color: #ffffff;
+    width: 400px;
+    text-align: center;
+    font-weight: 400;
+    gap: 10px;
+}
+
+#clothing-form input{
+  background-color: #222;
+    color: #ffffff;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    padding-left: 20px;
+    
+}
+
+#clothing-form input:focus{
+    background-color: #222;
+    color: #ffffff;
+    border: 2px solid #c8a86a;
+    
+}
+
+#clothing-form input::placeholder{
+color: #ffffff;    
+}
+
+
+
+#comment-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#feedback{
+    background-color: #222;
+    color: #ffffff;
+    height: 100px;
+    max-height: 100px;
+    min-height: max-content;
+    width: 300px;
+    max-width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#feedback::placeholder{
+    color: #ffffff;
+    text-align: center;
+}
+
+#feedback:focus{
+  background-color: #222;
+    color: #ffffff;
+    border: 2px solid #c8a86a;
+    
+}
+
+
+
+#skip-btn{
+    color: #ffffff;
+    background-color: #2a29299d;
+    font-weight: 400;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+ 
+    
+
+}
+
+#skip-btn:hover{
+    background-color: #c8a86a;
+    cursor: pointer;    
+    border: 1px solid #c8a86a;
+    box-shadow: 0 0.3em 1em  #c8a86a;
+    color: #0d0d0d;
+    transform: translatey(-0.10em);
+}
+
+#submit-btn{
+     color: #ffffff;
+    background-color: #2a29299d;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+
+}
+
+#submit-btn:hover{
+     background-color: #c8a86a;
+    cursor: pointer;    
+    border: 1px solid #c8a86a;
+    box-shadow: 0 0.3em 1em  #c8a86a;
+    color: #0d0d0d;
+    transform: translatey(-0.10em);
+}
+
+/*
+@media (min-width: 500px) and (max-width: 1700px) {
+
+    
+  
+
+}*/
+
+/*
+@media (min-width: 400px) and (max-width: 1700px){
+ 
+}*/
+
+@media (min-width: 600px) and (max-width: 2000px) {
+
+    body{
+   
+    width: 100%;
+    
+}
+.telegant-navbar {
+    width: 100%;
+   
+}
+
+
+}
+
+@media (min-width: 300px) and (max-width: 690px) {
+
+html, body{
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+    .hamburger { display: block; }
+
+    .navbar-container {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+
+    /* THE DROP DOWN BOX (Must use !important if other styles override) */
+    .navbar-links {
+        display: none !important; 
+        position: absolute;
+        top: 100%; /* Sits exactly at the bottom of the navbar */
+        right: 20px;
+        border-radius: 15px;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+        z-index: 9999;
+        background-color: #0d0d0d;
+        border: 1px solid #c8a86a;
+    }
+
+    /* Show the box when the class is added by JS */
+    .navbar-links.show {
+        display: flex !important;
+    }
+
+    .navbar-links li { margin: 10px 0; }
+
+    
+main{
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#clothing-form{
+     font-weight: 500;
+     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 470px;
+    width: 300px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+
+section{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#clothing-form label{
+    font-size: 1.2rem;
+    width: 220px;
+    text-align: center;
+}
+
+#clothing-form input{
+   
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+
+
+
+
+
+#comment-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+#feedback{
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 300px;
+    min-width: 290px;
+}
+
+
+#skip-btn{
+    font-size: 0.9rem;
+    border: none;
+    width: 100px;
+    height: 20px;
+    max-height: 20px;
+     min-height: 20px;
+     max-width: 100px;
+     min-width: 100px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding:8px;
+    text-align: center;
+    
+  
+  
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+#submit-btn{
+    border: none;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+
+}
+}
+/*
+@media (max-width: 450px){
+
+}*/
+
