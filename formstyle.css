@@ -515,6 +515,20 @@ section{
 
 }
 }
+body {
+    /* This ensures your content stays below the phone's status bar/notch */
+    padding-top: env(safe-area-inset-top);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.telegant-navbar {
+    position: fixed; /* Stick it to the very top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 /*
 @media (max-width: 450px){
 
